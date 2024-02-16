@@ -14,7 +14,7 @@ header {
 
 footer {
     background-color: darkslategray;
-    margin: 20px auto 0 auto;
+    margin: 30px auto 0 auto;
     text-align: center;
 }
 
@@ -74,7 +74,7 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: 24% 24% 24% 24%;
-    grid-gap: 1%;
+    grid-gap: 0 1%;
 }
 
 .product-card {
@@ -82,6 +82,7 @@ main {
     margin: 10px auto;
     border: solid 1px cadetblue;
     transition: transform 1s ease;
+    cursor: pointer;
 }
 
 .product-image {
@@ -179,3 +180,61 @@ main {
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
+
+/*PRODUCTO*/
+
+.pr-content{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+}
+
+.product-info-content{
+    width: 100%;
+}
+
+.product-info-form{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.product-info-form select{
+    border: solid 1px cadetblue;
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+
+.product-info-form select:hover {
+    border: 2px solid;
+    animation: rotateBorder 5s linear infinite;
+}
+
+.product-info-form input{
+    width: 40px;
+    border: solid 1px cadetblue;
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+
+.product-info-form input:hover {
+    border: 2px solid;
+    animation: rotateBorder 5s linear infinite;
+}
+
+.product-info-form button{
+    width: 20%;
+    height: 30px;
+    margin:10px 40%;
+    border: solid 1px cadetblue;
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+
+.product-info-form button:hover {
+    background-color: greenyellow;
+    border: 2px solid;
+    animation: rotateBorder 5s linear infinite;
+}
+
