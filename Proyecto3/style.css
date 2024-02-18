@@ -1,23 +1,25 @@
-:root{
+:root {
     --fuenteHeadding: 'PT Sans', sans-serif;
-    --fuenteParagraph:  'Open Sans', sans-serif;
+    --fuenteParagraph: 'Open Sans', sans-serif;
 
     --primario: #784d3e;
-    --gris: #e1e1e1; 
+    --gris: #e1e1e1;
     --blanco: #ffffff;
     --negro: #000000;
 }
 
-html{
+html {
     box-sizing: border-box;
     font-size: 62.5%;
 }
 
-*,*::before, *::after{
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
-body{
+body {
     font-family: var(--fuenteParagraph);
     font-size: 1.6rem;
     line-height: 2;
@@ -25,51 +27,59 @@ body{
 
 /*GLOBAL*/
 
-.container{
+.container {
     max-width: 120rem;
     width: 90%;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-h1, h2, h3, h4{
+h1,
+h2,
+h3,
+h4 {
     font-family: var(--fuenteHeadding);
 }
 
-h1{
+h1 {
     font-size: 4.8rem;
 }
-h2{
+
+h2 {
     font-size: 4rem;
 }
-h3{
+
+h3 {
     font-size: 3.2rem;
 }
-h4{
+
+h4 {
     font-size: 2.8rem;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
 /*UTILITIES*/
-.no-margin{
+.no-margin {
     margin: 0;
 }
-.no-padding{
+
+.no-padding {
     padding: 0;
 }
-.center-text{
+
+.center-text {
     text-align: center;
 }
 
 /*HEADER*/
 
-header{
+header {
     background-image: url(../Proyecto3/img/banner.jpg);
     height: 60rem;
     background-size: cover;
@@ -78,39 +88,40 @@ header{
     color: var(--blanco);
 }
 
-.header_text{
+.header_text {
     text-align: center;
     color: var(--blanco);
     margin-top: 5rem;
 }
 
-@media (min-width:768px){
-    .bar{
+@media (min-width:768px) {
+    .bar {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 }
 
-.loge{
+.loge {
     color: var(--blanco);
 }
-.loge .loge_name{
+
+.loge .loge_name {
     font-weight: 400;
 }
 
-.loge .loge_bold{
+.loge .loge_bold {
     font-weight: 700;
 }
 
 @media (min-width: 768px) {
-    .navigate{
+    .navigate {
         display: flex;
         gap: 2rem;
     }
 }
 
-.navigate_link{
+.navigate_link {
     display: block;
     text-align: center;
     font-size: 1.8rem;
@@ -121,7 +132,7 @@ header{
 }
 
 @media (min-width: 768px) {
-    .principal-content{
+    .principal-content {
         display: grid;
         grid-template-columns: 2fr 1fr;
         column-gap: 4rem;
@@ -133,12 +144,12 @@ header{
     margin-bottom: 2rem;
 }
 
-.entry:last-of-type{
+.entry:last-of-type {
     border: none;
     margin: 0;
 }
 
-.botton{
+.botton {
     display: block;
     font-family: var(--fuenteHeadding);
     text-align: center;
@@ -150,46 +161,49 @@ header{
     margin-bottom: 2rem;
 }
 
-.botton:hover{
+.botton:hover {
     transition: 1s ease;
     transform: scale(1.1);
 }
+
 @media (min-width: 768px) {
-    .botton{
+    .botton {
         display: inline-block;
     }
 }
-.primary-botton{
+
+.primary-botton {
     background-color: var(--primario);
 }
 
-.second-botton{
+.second-botton {
     background-color: var(--primario);
 }
 
-.curses{
+.curses {
     list-style: none;
 }
 
-.widget-curse{
+.widget-curse {
     border-bottom: 1px solid #784d3e;
     margin-bottom: 2rem;
 }
 
-.widget-curse:last-of-type{
+.widget-curse:last-of-type {
     border: none;
     margin: 0;
 }
-.widget-curse_info{
+
+.widget-curse_info {
     font-weight: 700;
 }
 
-footer{
+footer {
     background-color: #000000;
 }
 
-@media (min-width:768px){
-    .footer{
+@media (min-width:768px) {
+    .footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -198,14 +212,14 @@ footer{
 
 /*nosotros*/
 
-.about-us-container{
+.about-us-container {
     width: 95%;
     margin: auto;
     margin-bottom: 4rem;
 }
 
-@media (min-width:768px){
-    .about-us{
+@media (min-width:768px) {
+    .about-us {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
@@ -214,24 +228,24 @@ footer{
 
 /*cursos*/
 
-.curse-container{
+.curse-container {
     width: 95%;
     margin: auto;
     margin-bottom: 2rem;
 }
 
-.curse-content{
+.curse-content {
     border-bottom: 1px solid var(--primario);
     margin-bottom: 4rem;
 }
 
-.curse-content:last-of-type{
+.curse-content:last-of-type {
     border-bottom: none;
     margin-bottom: none;
 }
 
-@media (min-width:768px){
-    .curse-content{
+@media (min-width:768px) {
+    .curse-content {
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 2rem;
@@ -240,8 +254,44 @@ footer{
 
 /*Entrada*/
 
-.entry-content{
+.entry-content {
     width: 80%;
     margin: 4rem auto;
+}
+
+/*Contacto*/
+
+.contact-bg {
+    background-image: url("../Proyecto3/img/contacto.jpg");
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-form {
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.form-content {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.form-content label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.form-content input {
+    flex: 1; 
+    border: 1px solid var(--primario);
+}
+
+.form-content .textarea{
+    height: 20rem;
 }
 
