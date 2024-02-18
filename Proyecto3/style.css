@@ -115,6 +115,9 @@ header{
     text-align: center;
     font-size: 1.8rem;
     color: var(--blanco);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -177,7 +180,7 @@ header{
     border: none;
     margin: 0;
 }
-.curses span{
+.widget-curse_info{
     font-weight: 700;
 }
 
@@ -192,3 +195,53 @@ footer{
         align-items: center;
     }
 }
+
+/*nosotros*/
+
+.about-us-container{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+@media (min-width:768px){
+    .about-us{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/*cursos*/
+
+.curse-container{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.curse-content{
+    border-bottom: 1px solid var(--primario);
+    margin-bottom: 4rem;
+}
+
+.curse-content:last-of-type{
+    border-bottom: none;
+    margin-bottom: none;
+}
+
+@media (min-width:768px){
+    .curse-content{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+    }
+}
+
+/*Entrada*/
+
+.entry-content{
+    width: 80%;
+    margin: 4rem auto;
+}
+
