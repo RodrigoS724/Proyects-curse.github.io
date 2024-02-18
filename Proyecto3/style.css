@@ -164,6 +164,31 @@ header{
     background-color: var(--primario);
 }
 
+.curses{
+    list-style: none;
+}
+
+.widget-curse{
+    border-bottom: 1px solid #784d3e;
+    margin-bottom: 2rem;
+}
+
+.widget-curse:last-of-type{
+    border: none;
+    margin: 0;
+}
 .curses span{
     font-weight: 700;
+}
+
+footer{
+    background-color: #000000;
+}
+
+@media (min-width:768px){
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
